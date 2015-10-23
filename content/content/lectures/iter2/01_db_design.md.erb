@@ -1,0 +1,32 @@
+---
+title: Database Design
+desc: Applied DB Design, for your products
+homework: Individually design initial schemas for your products
+---
+
+<%= homework_hdr %>
+* Develop an initial schema for your product. Read [Basics of good database design in Web Development](http://www.onextrapixel.com/2011/03/17/the-basics-of-good-database-design-in-web-development/). 
+  * You need to think clearly about the functionality that your system will support. You also need to think carefully about relationships. For example, let's say I have a Student entity and I have a Course entity. Is there exactly one student for every course (1 to 1). Are there many students for any one course (many to 1) or perhaps does one student have many courses (1 to many), or maybe even a combination - one student can have many courses, and one course can have many students - (many to many). Don't even start worrying about designing your database until you have questions like that clear in your mind!
+  * Using all that background, develop initial schema for your product. Each team member work separately so you can then compare and contrast what you came up with. Include table names, field or attribute names, and relations or joins. <%= deliverable "Detailed initial schema for your product. As a pdf file generated any way you want." %>
+* Projects: You should be working on steps 1, 2, 3, 7, 8, 9 
+  
+#### Review Homework
+* Discuss some exemplar Schemas that were designed.
+
+#### Relational Databases and Object Oriented Software
+* What does an ORM do?
+* "Impendance misatch"
+* The "ActiveRecord" Object Oriented Pattern
+	* Wraps records *you are working on* inside an object of the Active Record pattern
+	* **Not** every record in the database, just what the code is working on at one time or another
+* The Rails Activerecord layer
+* What is the relationship between the underlying DB and the AR objects
+* What is database Migration. What problem does it solve?
+
+<%= include_topic :data_modeling %>
+
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
+
+

@@ -1,0 +1,32 @@
+---
+title: MVC and the model
+desc: How does the model get tied into the product?
+homework: Schema deliverable; \[AWDR\]Chapter 7
+---
+<%= homework_hdr %>
+* Do <%= link_to_topic :hw_schema_design %>. <%= deliverable "Submit a pdf with a schema for each of the assignments, in the format suggested." %>
+* Read \[ADWR\] Chapter 7, Validation and Unit Testing.
+  * We introduce an important new chapter in professional software engineering: validation and automated testing. To make your life easy, Rails lets you declare what the validations are for each part of a form. In doing this, Rails will check and issue reasonable errors on the page explaining if a validation has failed.
+  * Also rails can automatically create basic tests for your code, and you will see that they cause failures immediately because the test data does not meet the validations you asked for. Test Data?
+  * In order to run tests to see if your code is working as you expect, you always need some form of test data. If you want to ensure that price is never set to a negative number, for example, you need to have test data that asks for a negative price, and then see your error checking catch it. We call that test data "fixtures" or "test fixtures."
+  * Try your best to understand what's being covered. Do the code examples and get them to work.
+  * As usual, you will be doing your coding in your <%= link_to_intro :portfolio %>, directory `depot`
+
+#### Project Status
+* Projects: You should be working on steps 1 - 12
+
+#### Homework Review
+* Let's talk about confusing things in this chapter
+
+<%= include_topic :mvc_review %>
+
+#### Live coding
+* <%= link_to_topic :rails_db_models %>
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
+
+
+
+
+

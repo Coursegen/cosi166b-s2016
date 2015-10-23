@@ -1,0 +1,50 @@
+---
+title: TDD Continued
+homework: REad \[AWDRR\] Chapter 14. Team implements authentication for their product
+desc: We actually continue on TDD from the previous class
+---
+<%= homework_hdr %>
+* Introduce testability to your product
+  * Read up about the rails-admin gem and install it into your team product.
+  * Every individual member of each product team writes at least 3 Minitest-spec tests for the product
+  * <%= team_deliverable "Commit latest version of your product to github" %>
+  * <%= deliverable "Source file with the tests that you wrote in the product" %>
+* Introduce authentication to your product
+  * Read \[AWDRR\] Chapter 14. This homework asks you to apply all the techniques from that chapter to your product. I have indicated how the work might be divided up. If you finish with 'your' part early you need to offer to help the other team members. I suggest that you all work around a table on your sections so you can ask questions etc. Check code into github regularly to allow sharing of the latest.
+  * **Do not use the Devise gem unless you really really want to (suffer)**
+  * Decide with your team:
+    * What can an admin user do and not do
+    * What can a regular user do and not do
+    * What can someone who is not logged in do and not do
+  * Team member 1: 
+    * Create a User model along the same lines as the chapter. Also their controller and view and to allow users to be managed
+    * Write a test that verifies that a non-logged in user can access "protected parts" of your app
+  * Team member 2: 
+    * Create and implement the Sessions controller, along the same line as the chapter
+    * Add the necessary routes for sessions
+    * Write the tests for the new controller
+  * Team member 3:
+    * Implement the "authorization" part of the Chapter: "Limiting Access" etc
+    * Also write the tests for that part
+  * Team member 4:
+    * Implement logic and test to make sure last admin doesn't get deleted
+  * <%= team_deliverable "link to your github account; a screencapture demonstrating that what you implemented works and that tests run." %> (how to do a <%= link_to_topic :screencast %>)
+
+#### Discussion
+
+* [TeachBack](http://teachback.herokuapp.com)
+  * Student pin: 9334206
+  * TA pin: 7698318
+* [Self Assessment](https://docs.google.com/forms/d/1d6pPfrMog97c_XgStmh63DLSqMfbkr3w9IHKY-Vm_0U/viewform)
+* Homeworks
+  * Team deliverables
+  * Testing
+  * Authentication
+* Spark Grant
+* [RailsTutorial book](https://www.railstutorial.org/book)
+
+#### TDD Continued from previous class
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
+

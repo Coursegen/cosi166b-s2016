@@ -1,0 +1,58 @@
+---
+title: Forms and Views Continued
+desc: Continued on the unit about Forms and Views
+homework: Read Chapters 20 and 21 of AWDR
+---
+<%= homework_hdr %>
+* Read: Chapter 20 and 21 of AWDR. Some of this will be familiar, some of this will be new and very useful for your projects. Make sure you understand the purpose of sessions and how they are implemented in general, and also specifically with Rails.
+* Design the demo script for Shoscase Day. The best demo scripts "hook" the viewer with an interesting, novel bit. They also tell a story, e.g. "Let's say I've not used by bicycle in 2 years and would like to get rid of it, and maybe exchange it for something else." Your demo script is a series of bulletted steps that are meant to be followed during the demo. Meet with your team and discuss what the demo script should be and choose one of you to write it.<%= team_deliverable "Demo Script, as pdf" %>
+ 
+#### Teams
+* Teams should be intensely working on your products. You should be working on DEPLOY, GEMRESEARCH, DEMODATA, ADDTESTS, BOOTSTRAP around now.
+
+#### Discussion
+* Post-it note feedback
+	* Course Structure (8)
+	  * more time to focus on app development (5)
+	  * more coding, less theory
+	  * google calendar w/ due dates
+	  * course load a little overwhelming but overall like the material
+	* Specific Topic Requests (5)
+	  * more bootstrap
+	  * size/positioning of page elements (css)
+	  * ajax/javascript
+	  * more sql
+	  * more mvc, variable passing, etc between rails components
+	* Demos/Homeworks (3)
+	  * specific demos are useful, more of those
+	  * homework focused on specific concepts like railsform are useful
+	  * dedicate more in-class time to showing common but difficult tasks, like heroku
+	* Code Review / Case Studies (3)
+	  * more code review of students code / alternatives / best practices
+	  * more 'case studies' of interesting rails apps
+	  * more discussion of interesting solutions / coding together
+	* Misc. (1)
+	  * would like to know how to publish app to the app store
+
+* Homework Reading
+  * Lets fly through the chapter together
+  * What is "session state"? And where can it be stored?
+  * What is the difference between "form_for" and "form_tag"?
+
+
+#### Cookies are the crux of sessions
+* Max 4K of data, stored as 'file' by the browser on YOUR laptop
+* Each HTTP GET can potentially store a cookie:
+  * `curl -I http://www.google.com | grep Set-Cookie`
+* Browser will send that cookie back whenever:
+	* it is sending a request to the same server
+	* the cookie has not expired
+* But really, all you need is a 'fact' that the server gives to the client which is later on played back, e.g.
+  * `http://www.salas.com?SESSION=FFAF00AFFAF00AFFAF00AF`
+
+<%= include_topic :example_forms_views %>
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
+
+

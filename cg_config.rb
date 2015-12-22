@@ -4,7 +4,7 @@ require 'coursegen'
 AWS_BUCKET = "cosi166-2015"
 
 # Local directory path for directory of content
-CONTENT_PATH = "/mydev/cosi166b-2014"
+CONTENT_PATH = "/mydev/cosi166b-s2016"
 
 # Copyright string
 COPYRIGHT_STRING = "Copyright (2014-2015) R. Pito Salas, pitosalas@gmail.com"
@@ -15,12 +15,11 @@ COURSE_LONG_NAME = "Software Engineering"
 
 # Schedule information. Note that Monday is day 0
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
-  first_day: "jan-13-2015",
-  weekdays: [:tuesday, :wednesday, :friday],
+  first_day: "jan-13-2016",
+  weekdays: [:monday, :wednesday, :thursday],
   number: 39,
-  skips: ["jan-27-2015", "jan-28-2015", "feb-17-2015", "feb-18-2015", 
-          "feb-20-2015", "apr-3-2015", "apr-7-2015", "apr-8-2015", 
-          "apr-10-2015"])
+  skips: ["jan-18-2016", "feb-15-2016", "feb-17-2016", "feb-18-2016", "mar-28-2016",
+          "apr-18-2016", "apr-21-2016", "apr-25-2016", "apr-27-2016", "apr-27-2016"])
 
 # Sections in the right hand margin of the page
 # Bullet choices are :dash, :star, :plus, :minus

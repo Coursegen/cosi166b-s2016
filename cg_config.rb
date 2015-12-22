@@ -1,7 +1,7 @@
 require 'coursegen'
 
 # bucket for AWS Deployment of the course
-AWS_BUCKET = "cosi166-2015"
+AWS_BUCKET = "cosi166b-s2016"
 
 # Local directory path for directory of content
 CONTENT_PATH = "/mydev/cosi166b-s2016"

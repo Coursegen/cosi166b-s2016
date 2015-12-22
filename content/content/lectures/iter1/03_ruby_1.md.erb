@@ -1,0 +1,47 @@
+---
+title: Ruby, Git, Products
+desc: See Ruby in action, review the basics
+homework: Continue movies-1; get to lesson 40 of RHW; submit your favorite two from the product candidates.
+---
+<%= homework_hdr %>
+* Continue working on <%= link_to_topic :pa_movies_1 %>. This assignment will get you to write some basic code with Ruby. You will learn how to read files work with data in arrays and hashes. Remember that your work should be happening inside your <%= link_to_intro :portfolio %>.
+* Continue with RHW: [Learn Ruby The Hard Way](http://learnrubythehardway.org/book/preface.html). You should be at least up to Lesson 40 where you will learn about working with files. I know it's going fast, but we are trying to get up the learning curve quickly. The lessons are getting a lot more difficult, arent they? Don't give up or start slacking, keep at it!Remember that your work should be happening inside your <%= link_to_intro :portfolio %>.
+* Look through and think about the <%= link_to_incubator :prod_candidates %> that are available. Remember the caveat: Don't set the bar at "this is the most wonderful product idea I ever saw". Set it at "this is a product that could be interesting to develop and work on." <%= deliverable "Submit your personal top two" %>
+
+#### Homework Review
+* Discuss progress on the ruby work.
+* Look at some representative code in the portfolio
+
+#### Github open play
+Everyone clone this repo to your computer: [my-play-project](https://github.com/Cosi-166/my-play-project)
+
+
+	Hi students. This is a repository that we will all use to experiment with git and github. Your first mission will be to just clone this repo to your computer. 
+
+	##### Instructions
+
+	1. Locate the **HTTPS clone URL** (not the SSH url) within here: https://github.com/Cosi-166/my-play-project
+	1. Make sure you know your github username and password
+	1. Change to the directory that was created by git clone (`my-play-project`)
+	1. Run your text editor and create a file and put some text into it
+	1. Check the status of your repo (`git status`)
+	1. Add that new file to the staging area for git (`git add`)
+	1. Now with that one change, create a new git commit (`git commit`)
+	1. Your local copy of the repo now has one more commit than the server had
+	1. But notice that all your classmates are doing the same, so, there may already be some more commits on the server. So just to make sure, pull the state down of the repo which is on the server. (`git pull`)
+	1. Now push your repo (and all its commits) to the server (`git push`)
+	1. Double check what the state of your local repo is (`git status`)
+	1. Now locate a file that you didn't create, and make a change to it using your text editor.
+	1. Follow the same steps above to send that change up to the server
+
+	*Continue to play and play and play*
+
+	##### Useful terminology
+	* repo or repository: a collection of files, on big directory, which you are controlling with git.
+	* commit: a snapshot of the state of the repo. Every time you want to make another snapshot in time, you create another commit.
+
+#### Some ruby to play with
+<%= include_ruby :intro_tut %>
+
+#### Next Class
+* Look at homework: <%= link_to_next_lecture %>

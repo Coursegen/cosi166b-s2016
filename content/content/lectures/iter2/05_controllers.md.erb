@@ -1,0 +1,79 @@
+---
+title: Understanding controllers
+desc: We jump deep into Rails controllers and MVC
+homework: Read \[AWDR\] Chapter 18 and read AND DO Chapter 8
+---
+<%= homework_hdr %>
+* Read AWDR Chapter 18 (Finding your way around Rails) and 19 (Active Record).
+  * Keep a notepad handy, and write down several specific things that you still don't understand and several new cool things you learned.
+  * Look over the directory tree of your Depot application and see if you can identify the different directories and their purposes.
+  * Try to figure out and explain how it can be that the model.rb files have almost no code in them. For example in Depot, the product.rb file was almost empty. Where is the information about the tables and columns?
+  * I will ask you about all of that in class!
+* Read \[AWDR\] Chapter 8. Continue working in your <%= :portfolio %>, directory `depot`
+  * Notice the use of the generator again to create a new controller. It does not automatically create a model, but it does create necessary views. The command is `rails generate controller <model> <action1> <action2> ...`. The controller will have each action and there will also be a view generated for that action.
+  * When you have multiple pages in your app that have repeating elements (often a menu or a footer) you use a "Page Layout" to do this. It's just html that gets put 'around' the page itself.
+  * When you hear "helper", think "view helper". A helper is a little method used to generate html snippets to be used in views, that's all.
+  * While he demos "controller" functional tests, in the real world we often do those last if at all. Usually we do Model tests and integration tests only. But this is a good practice still.
+
+* Continue working with your team on your product. You should have done everything up to around 17 or 18.
+
+<%= callout("REMINDER", " Your portfolios will be reviewed and graded TODAY for progress.") %>
+
+#### Homework Discussion
+* Discuss Chapter 8 and 18
+  * Naming conventions?
+  * What are the key directories to know about?
+  * How did it go with the programming part of Chapter 8?
+  * How do you like that approach to homework? Pros and Cons?
+  * What is a page layout and what does it do?
+  * What is erb and what does it do?
+  * How did you do with the css? Do you want a lecture or workshop about it?
+  * Did you get tests to work? Why is there both rspec and minitest? What's the diff?
+  * Can you explain exactly what the point of caching is in this context?
+* Project updates
+  * Four projects will meet with PRs tomorrow. Questions?
+  * Quick updates from all 8 projects
+
+#### REST, Resources and Controllers
+* We've had some discussions about designing URLs
+* We talked about using a "directory structure-like" syntax for your URLs.
+* Reference: [Rails Guide about Routing](http://guides.rubyonrails.org/routing.html)
+
+#### Job of the controller
+* Recall, the URL is parsed by the router, which locates and calls the right controller
+* Breaking it down:
+    1. Router parses URL
+    1. Determines the controller (error: Can't find Controller's ruby file in app/controllers/)
+    1. Determines the action insider the controller (error: Can't find a method for the action)
+    1. Calls the action method, with the parameters corresponding to the 'rest' of the url
+    1. When action completes, a view of the same name is located (error: Can't find Views html.erb file in the `views/<controllername>/` directory)
+    1. View's 'erb' is expanded and returned, through controller, router, web server, back to the user.
+
+#### Review of HTTP
+* Lets go more in depth: <%= link_to_topic :http %>
+
+#### Resources in Rails
+* Automatic wiring of plumbing between urls, routing, models, and controllers
+* Takes advantage of standardized patterns
+    * Nesting model in the URLs
+    * CRUD operations as actions
+    * Path naming (path_to_user instead of "")
+    * Controller naming
+* Huge time saver and bug saver!
+
+#### Controller Actions
+* Who calls the controller action?
+* What parameters are supplied automatically by the controller action?
+* Sessions, why they are needed and how they work
+* Why does it take two separate actions to implement "create"?
+
+#### Demo
+* Lets take a look: <%= link_to_topic :controllers_resources %>
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
+
+
+
+
+

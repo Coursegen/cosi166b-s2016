@@ -1,0 +1,40 @@
+---
+title: Implementing the Database
+desc: Applying what we learned to an actual db implementation
+homework: Read AND do Chapter 5 and 6 of AWDR; Research NoSql Databases
+---
+<%= homework_hdr %>
+* NoSql dabases: There's a 'new' generation of databases which are non-relational often known as NOSQL databases. Here's one article about it: [NoSQL vs SQL](https://www.udemy.com/blog/nosql-vs-sql-2/). There are many many more. Do your own additional research and write your own view from that research about the advantages and disadvantages of NoSQL vs. 'traditional' SQL databases. Include a link to your source(s). <%= deliverable "Your report, 1 page or less." %>
+* Read \[AWDR\]Chapter 5 and 6. 
+  * In chapter 5 Notice how he introduces what I called <%= link_to_topic :ux_flows %>. He calls it a Page Flow, but it's the same exact idea. 
+  * You need this because you won't be able to code the app without knowing what the flow is. It's fundamental! And also, notice how he discusses an initial guess at application data, which is the same as what you've been doing on your projects!. 
+  * In Chapter 6, Notice that "rails new depot" creates a directory called "depot" whereever you are. So in your <%= link_to_intro :portfolio %>, for example,
+    * `cd cosi166b_cburkh`
+    * `rails new depot`
+    * `cd depot`
+  * Follow along and do all the code in Chapter 6, prove to yourself that it runs.
+  * You will discover that to write a web app you need to use many different 'langauges': Ruby, Html, css, and other languages. 
+  * Don't expect to understand everything, we will be going over this several more times. But try, really try. Write down two things you just don't understand.
+* Continue working Programming Assignment 3, <%= link_to_topic :pa_mazes %>. As usual, you will be doing your coding in your <%= link_to_intro :portfolio %>, directory `mazes`.
+
+#### Project Status
+* Projects: You should be working on steps 1, 2, 3, 7, 8, 9 
+
+<%= callout("REMINDER", " Your portfolios will be reviewed and scored TODAY for progress.") %>
+
+#### Homework Discussion
+* Lets talk about stuff you just didn't understand.
+* Nosql discussion. What's good, what's bad. What's your experience?
+
+#### The Rails directory structure
+* Lets take a quick tour of a rails app
+
+<%= include_topic :models %>
+<%= include_topic :database_migration %>
+<%= include_topic :ar_db_mechanics %>
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
+
+
+

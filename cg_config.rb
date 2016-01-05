@@ -7,7 +7,7 @@ AWS_BUCKET = "cosi166b-s2016"
 CONTENT_PATH = "/mydev/cosi166b-s2016"
 
 # Copyright string
-COPYRIGHT_STRING = "Copyright (2014-2015) R. Pito Salas, pitosalas@gmail.com"
+COPYRIGHT_STRING = "Copyright (2014-2016) R. Pito Salas, pitosalas@gmail.com"
 
 # Course short name
 COURSE_SHORT_NAME = "COSI 166b"

@@ -8,20 +8,12 @@ title: Product Reviewer Logistics
 
 <% table = ::TableHelper.new(:default) %>
 <% table.headers("Name", "LinkedIn", "Projects") %>
-<% table.row("Melissa Leffler", link_to("LinkedIn",
-"https://www.linkedin.com/pub/melissa-leffler/0/50/a17"), "Fooder, BarterMe") %>
-<% table.row("Ed McNierney", link_to("LinkedIn", "https://www.linkedin.com/profile/view?id=11020213&authType=NAME_SEARCH&authToken=hM5Z&locale=en_US&trk=tyah2&trkInfo=tarId%3A1419267628616%2Ctas%3Aed%20man%2Cidx%3A1-1-1)"), "Campus GPS, Epsilon") %>
-<% table.row("Mike Kraley", link_to("LinkedIn", "https://www.linkedin.com/profile/view?id=50925&authType=NAME_SEARCH&authToken=QwcP&locale=en_US&trk=tyah2&trkInfo=tarId%3A1419267669781%2Ctas%3Amike%20krale%2Cidx%3A1-1-1"), "Surveyor, Trade Assistant II") %>
-<% table.row("Eddie Galvez", link_to("LinkedIn", "https://www.linkedin.com/profile/view?id=11223905&authType=NAME_SEARCH&authToken=vp14&locale=en_US&srchid=69531419267699230&srchindex=1&srchtotal=272&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A69531419267699230%2CVSRPtargetId%3A11223905%2CVSRPcmpt%3Aprimary)"), "Trade Assistant I, Carpe Diem") %>
+<% table.row("P1r", link_to("LinkedIn", ""), "Prod1, Prod2") %>
 <%= table.render %>
 
 #### Meeting Schedule
 
 <% table = ::TableHelper.new(:default) %>
 <% table.headers("#", "Date", "Link", "Purpose") %>
-<% table.row("1", "Jan 30, 12:30-1:50pm", link_to_lecture(:lab_pr_1), "Intro and PRs choose projects") %>
-<% table.row("2a: Ed & Melissa", "Feb 25, 2:00-4:00pm", link_to_lecture(:lab_sprint_2), "Product Design and Architecture") %>
-<% table.row("2b: Mike & Eddie", "March 4, 2:00-4:00pm", link_to_lecture(:lab_sprint_3), "Product Design and Architecture") %>
-<% table.row("3", "April 1, 2:00-4:00pm", link_to_lecture(:lab_pr_3), "Convergence") %>
-<% table.row("4", "(Not set yet)", "", "Final Showcase Presentations") %>
+<% table.row("1", "Feb 4, 2:00-4:00pm)", link_to_lecture(:lab_pr_1), "Intro and PRs choose projects") %>
 <%= table.render %>

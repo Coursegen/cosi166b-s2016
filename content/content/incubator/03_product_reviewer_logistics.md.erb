@@ -1,5 +1,5 @@
 ---
-title: Product Reviewer Logistics
+title: Product Reviewers
 ---
 #### Intro
 * <%= link_to_incubator :product_reviewer_meetings %>
@@ -7,13 +7,9 @@ title: Product Reviewer Logistics
 #### Panel Members and Product pairups
 
 <% table = ::TableHelper.new(:default) %>
-<% table.headers("Name", "LinkedIn", "Projects") %>
-<% table.row("P1r", link_to("LinkedIn", ""), "Prod1, Prod2") %>
-<%= table.render %>
-
-#### Meeting Schedule
-
-<% table = ::TableHelper.new(:default) %>
-<% table.headers("#", "Date", "Link", "Purpose") %>
-<% table.row("1", "Feb 4, 2:00-4:00pm)", link_to_lecture(:lab_pr_1), "Intro and PRs choose projects") %>
+<% table.headers("Name", "email", "Projects") %>
+<% table.row("Andy Singleton", "andy@assembla.com", "Projects") %>
+<% table.row("Jacob Murphy", "jcmurphy@brandeis.edu", "Projects") %>
+<% table.row("Eric Silverstein + Ezra Freedman", "eric.silberstein@drugdev.com  Ezra.Freedman@drugdev.com", "Projects") %>
+<% table.row("Paul Kleppner", "pkleppner@gmail.com", "Projects") %>
 <%= table.render %>

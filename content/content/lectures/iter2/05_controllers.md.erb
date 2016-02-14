@@ -1,24 +1,13 @@
 ---
 title: Understanding controllers
 desc: We jump deep into Rails controllers and MVC
-homework: Read \[AWDR\] Chapter 18 and read AND DO Chapter 8
+homework: 1) Read [AWDR] Chapter 18, 19; 2) Read [AWDR] Chapter 8 while actually following along the example; 3) Read the Rails Doctrine
 ---
 <%= homework_hdr %>
-* Read AWDR Chapter 18 (Finding your way around Rails) and 19 (Active Record).
-  * Keep a notepad handy, and write down several specific things that you still don't understand and several new cool things you learned.
-  * Look over the directory tree of your Depot application and see if you can identify the different directories and their purposes.
-  * Try to figure out and explain how it can be that the model.rb files have almost no code in them. For example in Depot, the product.rb file was almost empty. Where is the information about the tables and columns?
-  * I will ask you about all of that in class!
-* Read \[AWDR\] Chapter 8. Continue working in your <%= :portfolio %>, directory `depot`
-  * Notice the use of the generator again to create a new controller. It does not automatically create a model, but it does create necessary views. The command is `rails generate controller <model> <action1> <action2> ...`. The controller will have each action and there will also be a view generated for that action.
-  * When you have multiple pages in your app that have repeating elements (often a menu or a footer) you use a "Page Layout" to do this. It's just html that gets put 'around' the page itself.
-  * When you hear "helper", think "view helper". A helper is a little method used to generate html snippets to be used in views, that's all.
-  * While he demos "controller" functional tests, in the real world we often do those last if at all. Usually we do Model tests and integration tests only. But this is a good practice still.
- * Read [The Rails Doctrine](http://rubyonrails.org/doctrine/). 
-
-* Continue working with your team on your product. You should have done everything up to around 17 or 18.
-
-<%= callout("REMINDER", " Your portfolios will be reviewed and graded TODAY for progress.") %>
+* **Reading**: Read AWDR Chapter 18 (Finding your way around Rails) and 19 (Active Record). Keep a notepad handy, and write down several specific things that you still don't understand and several new cool things you learned. Look over the directory tree of your Depot application and see if you can identify the different directories and their purposes. Try to figure out and explain how it can be that the model.rb files have almost no code in them. For example in Depot, the product.rb file was almost empty. Where is the information about the tables and columns? <%= deliverable "Find and answer the warmup questions." %>
+* **Reading** Read \[AWDR\] Chapter 8. Continue working in your <%= :portfolio %>, directory `depot`. Notice the use of the generator again to create a new controller. It does not automatically create a model, but it does create necessary views. The command is "rails generate controller name action action action". The controller will have each action and there will also be a view generated for that action. When you have multiple pages in your app that have repeating elements (often a menu or a footer) you use a "Page Layout" to do this. It's just html that gets put 'around' the page itself. When you hear "helper", think "view helper". A helper is a little method used to generate html snippets to be used in views, that's all. While he demos "controller" functional tests, in the real world we often do those last if at all. Usually we do Model tests and integration tests only. But this is a good practice still. <%= deliverable "Find the separate warmup questions and answer them." %>
+* **Read:** [The Rails Doctrine](http://rubyonrails.org/doctrine/) and consider whether it's a good set of principles, how much you agree with them. We will discuss this in class.
+* **Project** Continue working with your team on your product. You should have done everything up to around 17 or 18.
 
 #### Homework Discussion
 * Discuss Chapter 8 and 18
@@ -31,9 +20,6 @@ homework: Read \[AWDR\] Chapter 18 and read AND DO Chapter 8
   * How did you do with the css? Do you want a lecture or workshop about it?
   * Did you get tests to work? Why is there both rspec and minitest? What's the diff?
   * Can you explain exactly what the point of caching is in this context?
-* Project updates
-  * Four projects will meet with PRs tomorrow. Questions?
-  * Quick updates from all 8 projects
 
 #### REST, Resources and Controllers
 * We've had some discussions about designing URLs

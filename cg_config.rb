@@ -12,6 +12,7 @@ COPYRIGHT_STRING = "Copyright (2014-2016) R. Pito Salas, pitosalas@gmail.com"
 # Course short name
 COURSE_SHORT_NAME = "COSI 166b"
 COURSE_LONG_NAME = "Software Engineering"
+COURSE_ABBREV = "166b"
 
 # Schedule information. Note that Monday is day 0
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(

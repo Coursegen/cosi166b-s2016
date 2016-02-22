@@ -82,7 +82,7 @@ route '/**/*.ical.erb' do
 end
 
 # Select which .md.erb becomes the home page of the site
-route '/content/intro/02_coursetoc.md.erb' do
+route '/content/intro/01_coursetoc.md.erb' do
   '/index.html'
 end
 

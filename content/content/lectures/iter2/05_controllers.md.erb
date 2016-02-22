@@ -10,7 +10,7 @@ homework: 1) Read [AWDR] Chapter 18, 19; 2) Read [AWDR] Chapter 8 while actually
 * **Project** Continue working with your team on your product. You should have done everything up to around 17 or 18.
 
 #### Homework Discussion
-* Discuss Chapter 8 and 18
+* Discuss Chapter 8, 18 and 19
   * Naming conventions?
   * What are the key directories to know about?
   * How did it go with the programming part of Chapter 8?
@@ -21,7 +21,10 @@ homework: 1) Read [AWDR] Chapter 18, 19; 2) Read [AWDR] Chapter 8 while actually
   * Did you get tests to work? Why is there both rspec and minitest? What's the diff?
   * Can you explain exactly what the point of caching is in this context?
 
+<%= include_topic :url_rails %>
+
 #### REST, Resources and Controllers
+* Lets go more in depth: <%= link_to_topic :http %>
 * We've had some discussions about designing URLs
 * We talked about using a "directory structure-like" syntax for your URLs.
 * Reference: [Rails Guide about Routing](http://guides.rubyonrails.org/routing.html)
@@ -35,9 +38,6 @@ homework: 1) Read [AWDR] Chapter 18, 19; 2) Read [AWDR] Chapter 8 while actually
     1. Calls the action method, with the parameters corresponding to the 'rest' of the url
     1. When action completes, a view of the same name is located (error: Can't find Views html.erb file in the `views/<controllername>/` directory)
     1. View's 'erb' is expanded and returned, through controller, router, web server, back to the user.
-
-#### Review of HTTP
-* Lets go more in depth: <%= link_to_topic :http %>
 
 #### Resources in Rails
 * Automatic wiring of plumbing between urls, routing, models, and controllers

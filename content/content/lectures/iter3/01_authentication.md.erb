@@ -32,7 +32,13 @@ homework: 1) Read Security in Rails assignments; 2) Teams continue working on pr
 ### Authentication and Authorization
 <%= include_topic :intro_auth %>
 
-#### How it works in Rails
+#### Possible implementation strategies in Rails
+* Roll your own, using simple authentication
+* Look at other options: [Clearance](https://rubygems.org/gems/clearance) or [Sorcery]( https://github.com/NoamB/sorcery) or [Authlogic](http://www.rubydoc.info/github/binarylogic/authlogic)
+* My advice: Avoid Devise. From my personal experience Devise is a tempation because it looks so magical but in the end it made life difficult. Many many people like Devise so this is my personal advice. YMMV.
+
+#### Demos
+* <%= link_to_topic :clearance_authdemo %>
 * <%= link_to_topic :basic_authentication %>
 
 #### Look at next class

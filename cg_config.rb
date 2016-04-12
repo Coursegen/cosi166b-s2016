@@ -20,7 +20,7 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
   weekdays: [:monday, :wednesday, :thursday],
   number: 39,
   skips: ["jan-18-2016", "feb-15-2016", "feb-17-2016", "feb-18-2016", "mar-28-2016",
-          "apr-18-2016", "apr-21-2016", "apr-25-2016", "apr-27-2016", "apr-27-2016"])
+          "apr-21-2016", "apr-25-2016", "apr-27-2016", "apr-28-2016"])
 
 # Sections in tguhe right hand margin of the page
 # Bullet choices are :dash, :star, :plus, :minus

@@ -1,0 +1,33 @@
+---
+title: ActiveRecord Mechanics
+---
+
+#### ActiveRecord DB Mechanics
+* ActiveRecord
+	* Library from Ruby on Rails which is the connection between the rails application and the underlying database
+	* For advanced designs, there are options other than Activerecord
+	* ActiveRecord is also often used by itself, especially in Sinatra
+* Naming
+	* Model.rb file is named singular, e.g. User
+	* Corresponding db table is plural and lower case, e.g. users
+* Correspondences
+	* Each instance of the class (e.g. User) corresponds to a single record in the dabase
+	* When a query returns a bunch of records, you get a collection of instances of the class
+	* (this is classic Active Record model)
+* Attributes
+	* Rails will automagically create the methods to access each field of the record in the database
+* Different database 'servers'
+	* Sqllite - local database, no need for a server
+	* MySql - Standard industrial strength database, free
+	* Postgress - Becoming very popular with Rails community
+* Datatypes supported by ActiveRecord
+	* <%= link_to_topic :db_types %>
+* Queries and other ways to access the database
+  * <%= link_to_topic :rails_activerecord_queries %>
+  * [ActiveRecord Guide for QUeries](http://guides.rubyonrails.org/active_record_querying.html)
+* Validations
+	* [Rails Guide on ActiveRecord Validations](http://guides.rubyonrails.org/active_record_validations.html)
+* Tools and notes
+	* Check out [MesaSQLite](http://www.desertsandsoftware.com/?page_id=17)
+  * On Linux, checkout [SqliteMan](http://sqliteman.yarpen.cz/ is robust)
+	* Handy Rake Info: <%= link_to_topic :rake_commands %>

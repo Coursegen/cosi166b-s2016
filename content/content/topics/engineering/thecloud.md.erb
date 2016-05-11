@@ -1,0 +1,45 @@
+---
+title: "The Cloud"
+---
+
+#### Taxonomy of "The Cloud"
+* Software as a Service **(SaaS)**: Delivers an application through a web site or app.
+  * Examples: Google Docs, Basecamp, Github, etc.
+  * Differentiated by what the app is
+* Platform as a Service **(Paas)**: Deploy your apps to the cloud, based on their platform.
+  * Examples: Heroku, [Amazon Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/), Google App Engine, Pusher.com
+  * Differentiated by what the platform is, e.g. Node.js, Rails, Go, etc.
+* Infrastructure as a Service **(IaaS)**: Delivers some part of infrastructure through the cloud. Infrastructure might be CPU, Disk, Queueing service etc.
+  * Examples: Amazon EC2, S3, Google Compute Engine, Linode, etc.
+  * Differentiated by what part(s) of infrastructure are offered.
+* DIY Clouds
+  * Open Source Project: [Cloud Foundry](https://www.cloudfoundry.org/learn/features/)
+  * DEIS (nothing to do with Brandeis :) [DEIS](http://deis.io)
+* Pricing
+  * These services usually have a free tier, but for 'serious' use you need to pay
+  * Some examples:
+    * Heroku: free for 'open source' (which I think means Public Github Repos)
+    * Pusher: free for up to 20 simultanuous connections. (what is the lifecycle of a connection?)
+    * S3 (AWS Storage Server): 5 GB of Amazon S3 standard storage free (see further details on their site.)
+    * CodeClimate: Free for public repos
+    * Github: Free for public Repos
+    * loader.io: Simulated load to test scalability
+* Notice that the terms are not settled yet. XaaS sometimes is defined differently
+
+#### Products: Web vs. Cloud Architecture
+* <%= discussion "Is there a difference? What are some of the tradeoffs?" %>
+* A lot in common
+	* Accessed using HTTP/REST protocols (typically)
+	* Accessed with a web browser or mobile app (typically)
+* What does the term "provisioning" mean?
+* Overview of deployment
+	* Web: means you own, or control, and manage, a complete set of servers for your application
+	* Cloud: means you rent nodes in a cloud (e.g. Amazon Web Services)
+	* What are web services?
+* Big differences
+	* "Elasticity"
+	* "API control over provisioning"
+
+
+##### Reference
+* [Classification of Cloud Services](http://bitheads.com/what-types-of-cloud-services-are-available/)

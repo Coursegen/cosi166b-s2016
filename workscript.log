@@ -70,3 +70,17 @@ Already up-to-date.
 Already up-to-date.
 Already up-to-date.
 Already up-to-date.
+[master ebb434f] Checkpoint work to git
+ 1 file changed, 15 insertions(+)
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   workscript.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Updating ebb434f..8a74ea1
+Updating ebb434f..8a74ea1
+Updating ebb434f..8a74ea1

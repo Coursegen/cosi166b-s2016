@@ -1,0 +1,22 @@
+Feedback 166 Spring 2015
+
+- more practice with rails early on in the semester, rails PA
+- solve a specific problem with Rails
+- more time to develop the idea and research the applications
+- form example earlier?
+- railstutorial.org book instead of ruby the hard way
+- code academy is more rubbish
+- project euler?
+- individual feedback from Pito was great
+- get feedback
+- PR are amazing
+- PR Value is super useful depending on specific project
+- Show last years projects
+- look at other ruby on rails
+- look for gem that does X and write a sample program with it
+- pick one of 10 good github acts and everyone write a little report
+- a little more about mobile responsiveness
+- a detailed code review of the submitted code
+- survey of different web framework
+- best lectures were about conceptual stuff - scalability, database design, networking etc.
+-  
